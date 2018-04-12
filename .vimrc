@@ -31,6 +31,8 @@ set bs=2     " make backspace behave like normal again
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
 let mapleader = ","
 
+" Format to the pretty json style
+com! Json %!python -m json.tool
 
 " Bind nohl
 " Removes highlight of your last search
